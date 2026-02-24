@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="setbtn"><img src="assets/equalizer.png"></button>
+
+    <div class="sets">
+        <form action="" id="form">
+           <label for="level">Level:</label>
+           <select id="levelSelect">
+               <option value="easy">Easy</option>
+               <option value="medium">Medium</option>
+               <option value="hard">Hard</option>
+           </select> 
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Typing Speed Test</h2>
+        <small>Type the word</small>
+        <h1 id="word"></h1>
+        <input type="text" id="text" autocomplete="off" placeholder="Start typing..." />
+        <p class="timer">Time left: <span id="timeLeft">10s</span></p>
+        <p class="score">Score: <span id="score">0</span></p>
+        <div class="gameover" id="gameover"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

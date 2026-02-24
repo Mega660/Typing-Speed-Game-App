@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #00326b;
+}
+button{
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#9ec14c, #41b14f);
+}
+select{
+    width: 200px;
+    padding: 5px;
+    font-family: inherit;
+    appearance: none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-color: #fff;
+}
+select:focus,button:focus,input:focus{
+    outline: 0;
+}
+.setbtn{
+    position: absolute;
+    bottom:0px;
+    right: 30px;
+    margin-bottom: 20px;
+    
+}
+.sets{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    background-image: linear-gradient(#0d0e0d, #272622);
+}
+.sets.hide{
+    transform: translateY(-100%);
+}
+.container{
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 30px 30px 5px 5px;
+    box-shadow: rgb(40, 40, 41) 0px 20px 30px -10px;
+    background-image: linear-gradient(#010052, #234e21);
+}
+h2{
+    padding: 8px;
+    margin: 0 0 40px;
+    background-color: #39006e;
+    border-radius: 10px;
+}
+input{
+    border: 0;
+    font-size: 14px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 46px;
+    border-radius: 25px;
+}
+.score{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding-top:15px;
+}
+
+.timer{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    padding-top:15px;
+}
+.gameover{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;background-color: inherit;
+    border-radius: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #02083f;
+    z-index: 1;
+}
+::placeholder{
+    color: #000;
+} 
+
+#levelSelect{
+    border-radius: 10px;
+    background-image: linear-gradient(#9ec14c, #41b14f);
+}
+label{
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+}
